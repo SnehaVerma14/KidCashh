@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PaymentActivity">
+
+    <TextView
+        android:id="@+id/paymentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:id="@+id/paymentCardImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/virtual_card"
+        android:layout_below="@id/paymentText"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Virtual Card"/>
+
+    <EditText
+        android:id="@+id/cardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:layout_below="@id/paymentCardImage"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/validThru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valid Thru"
+        android:inputType="date"
+        android:layout_below="@id/cardNumber"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nickname"
+        android:inputType="text"
+        android:layout_below="@id/validThru"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/confirmPaymentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Payment"
+        android:layout_below="@id/nickname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

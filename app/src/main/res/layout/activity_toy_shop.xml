@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ToyShopActivity">
+
+    <TextView
+        android:id="@+id/shopText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toy Shop"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <GridLayout
+        android:id="@+id/toyGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shopText"
+        android:layout_marginTop="20dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_centerHorizontal="true">
+
+        <!-- Toy Item 1 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/toyImage1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/toy1"
+                android:contentDescription="Toy 1"/>
+            <TextView
+                android:id="@+id/toyName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toy 1"
+                android:layout_below="@id/toyImage1"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <!-- Toy Item 2 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/toyImage2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/toy2"
+                android:contentDescription="Toy 2"/>
+            <TextView
+                android:id="@+id/toyName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toy 2"
+                android:layout_below="@id/toyImage2"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <!-- Toy Item 3 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/toyImage3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/toy3"
+                android:contentDescription="Toy 3"/>
+            <TextView
+                android:id="@+id/toyName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toy 3"
+                android:layout_below="@id/toyImage3"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <!-- Toy Item 4 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/toyImage4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/toy4"
+                android:contentDescription="Toy 4"/>
+            <TextView
+                android:id="@+id/toyName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toy 4"
+                android:layout_below="@id/toyImage4"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+    </GridLayout>
+</RelativeLayout>
